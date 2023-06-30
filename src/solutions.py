@@ -2,6 +2,9 @@ from pprint import pprint
 from WordCounter import WordCounter
 from TaxMan import TaxMan
 from Calculator import Calculator
+from CarCollector import CarCollector
+from Character import Dwarf
+from Character import Fighter
 
 people_list = [
     {'name': 'alice',   'age': 20, 'weight': 160, 'sex': 'male',   'id': 1},
@@ -86,3 +89,18 @@ def ex7():
     calculator4.div()
     print(calculator4.get_result())
 # ex7()
+
+def ex8():
+    pprint(CarCollector.get_data())
+# ex8()
+
+def ex9():
+    f = Fighter(18)
+    d = Dwarf(15)
+    print(f)
+    print(d)
+    f.fight(d)
+    d.fight(f)
+    print(f)
+    print(d)
+# ex9()
